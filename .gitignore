@@ -1,0 +1,31 @@
+node_modules
+.DS_Store
+*.local
+
+# Legacy directories (archived, not part of v2.0)
+_archive/
+itsrellz.com/
+css/
+doc/
+js/
+portfolio-main/
+/img/
+_notes/
+
+# Legacy root files
+/style.css
+/style.css.old
+/humans.txt
+/crossdomain.xml
+/browserconfig.xml
+/phpinfo.php
+/404.html
+/notes.txt
+/new 1.txt
+/FETCH_HEAD
+/mstile-*.png
+/android-chrome-*.png
+/apple-touch-icon-*.png
+/apple-touch-icon-precomposed.png
+/favicon-*.png
+/favicon.ico
