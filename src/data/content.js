@@ -4,7 +4,7 @@ export const siteConfig = {
   email: 'DWillis629@gmail.com',
   location: 'Virginia Beach, VA',
   formspreeId: 'xpwzgkvl', // [UPDATE ME] - Replace with your Formspree form ID
-  ga4Id: 'G-XXXXXXXXXX', // [UPDATE ME] - Replace with your GA4 measurement ID
+  ga4Id: 'G-HVD9EBZ8CF',
 }
 
 export const socialLinks = [
@@ -31,7 +31,7 @@ export const about = {
     { label: 'Articles Published', value: 20 },
     { label: 'Communities Built', value: 5 }, // [UPDATE ME]
   ],
-  profileImage: '/img/derrell.png',
+  profileImage: '/img/derrell.JPG',
 }
 
 export const experience = [
