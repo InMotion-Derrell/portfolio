@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'Derrell Willis',
-  title: 'Product Manager & Developer Relations Manager',
+  title: 'Virginia Beach Web Developer & Product Manager',
   email: 'DWillis629@gmail.com',
   location: 'Virginia Beach, VA',
   formspreeId: 'xpwzgkvl', // [UPDATE ME] - Replace with your Formspree form ID
@@ -15,6 +15,7 @@ export const socialLinks = [
 
 export const navLinks = [
   { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
   { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
   { label: 'Portfolio', href: '#portfolio' },
@@ -23,8 +24,8 @@ export const navLinks = [
 ]
 
 export const about = {
-  headline: 'Bridging the gap between complex technical products and diverse communities',
-  bio: `I'm a PMP-certified Product Manager and Developer Relations Manager with over 10 years of experience driving growth across product management, technical support, customer success, and developer advocacy. I own the full product lifecycle—from discovery through launch—while leading cross-functional teams of up to 160 personnel through major platform transitions and software releases. I leverage data-driven decision making, AI-driven content strategies, and Agile methodologies to deliver products that align with business goals and maximize customer value.`,
+  headline: 'Helping Hampton Roads businesses build a better web presence',
+  bio: `I'm a Virginia Beach-based web developer and PMP-certified Product Manager with over 10 years of experience in web development, product management, and developer relations. I help small businesses in the Hampton Roads area build, fix, and maintain their websites, from simple landing pages to full custom builds. I also bring deep experience in product lifecycle management, leading cross-functional teams of up to 160 personnel, and leveraging data-driven strategies to deliver results that align with real business goals.`,
   stats: [
     { label: 'Years Experience', value: 10 },
     { label: 'Team Members Led', value: 160 },
@@ -80,9 +81,10 @@ export const experience = [
 ]
 
 export const heroDescriptors = [
+  'Virginia Beach Web Developer',
   'Product Manager',
   'Developer Relations Manager',
-  'Project Management Professional',
+  'Hampton Roads Freelancer',
   'Community Builder',
   'Developer Advocate',
 ]

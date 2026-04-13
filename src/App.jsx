@@ -8,6 +8,7 @@ import Experience from './components/sections/Experience'
 import Skills from './components/sections/Skills'
 import Portfolio from './components/sections/Portfolio'
 
+import Services from './components/sections/Services'
 import Writing from './components/sections/Writing'
 import Contact from './components/sections/Contact'
 import { initGA4 } from './utils/analytics'
@@ -25,6 +26,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Services />
         <Experience />
         <Skills />
         <Portfolio />

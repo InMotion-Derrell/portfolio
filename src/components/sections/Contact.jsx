@@ -42,7 +42,7 @@ export default function Contact() {
           </h2>
           <div className="section-divider" />
           <p className="text-center text-white/50 max-w-xl mx-auto mt-4">
-            Have a question, want to collaborate, or just want to say hi? Feel free to reach out!
+            Need a website built or fixed? Want to collaborate? Based in Virginia Beach and serving the Hampton Roads area. Reach out!
           </p>
         </FadeIn>
 
@@ -123,7 +123,7 @@ export default function Contact() {
                 Let&apos;s Connect
               </h3>
               <p className="text-white/50 mb-8 leading-relaxed">
-                Whether it&apos;s about developer relations, community building, speaking opportunities, or just a chat about tech — I&apos;d love to hear from you.
+                Whether you need a new website, want to fix an existing one, or just want to chat about your business&apos;s web presence, I&apos;d love to hear from you. Local to Virginia Beach and happy to meet in person.
               </p>
 
               <div className="space-y-4">

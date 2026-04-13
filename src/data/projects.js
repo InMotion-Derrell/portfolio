@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     title: 'Portfolio Website',
-    description: 'This very portfolio — built with React, Vite, Tailwind CSS, and Framer Motion.',
+    description: 'This very portfolio, built with React, Vite, Tailwind CSS, and Framer Motion.',
     category: 'Web Apps',
     tags: ['React', 'Vite', 'Tailwind'],
     image: null,
