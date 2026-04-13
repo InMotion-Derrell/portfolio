@@ -29,6 +29,15 @@ export const projects = [
     githubUrl: null,
   },
   {
+    title: 'TourWax',
+    description: 'A live music discovery platform aggregating concert tour dates, venue info, and artist news for 2,200+ artists. Features SEO-optimized landing pages via SSG + ISR, dynamic OG images, structured data, time-based discovery pages, and affiliate revenue integration.',
+    category: 'Web Apps',
+    tags: ['Next.js', 'TypeScript', 'Postgres', 'Tailwind'],
+    image: null,
+    liveUrl: 'https://www.tourwax.com',
+    githubUrl: null,
+  },
+  {
     title: 'Portfolio Website',
     description: 'This very portfolio, built with React, Vite, Tailwind CSS, and Framer Motion.',
     category: 'Web Apps',
