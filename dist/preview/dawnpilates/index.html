@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Dawn Pilates Studio | Boutique Reformer Pilates in Virginia Beach &amp; Chesapeake</title>
+  <meta name="description" content="Boutique Reformer Pilates for every body. Locally owned studios in Virginia Beach and Chesapeake. Reformer, mat, TRX, and private sessions. Book your first class today." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --sage: #7d9b76;
+      --sage-deep: #5e7a58;
+      --sage-light: #b8c9b1;
+      --cream: #faf6ee;
+      --sand: #e8ddc7;
+      --terracotta: #c87f5a;
+      --terracotta-deep: #a85f3e;
+      --charcoal: #2d2a25;
+      --warm-muted: #7a766e;
+      --white-warm: #fdfbf6;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--charcoal); background: var(--white-warm); }
+    .font-display { font-family: 'Playfair Display', serif; letter-spacing: -0.01em; }
+    .bg-sage { background-color: var(--sage); }
+    .bg-sage-deep { background-color: var(--sage-deep); }
+    .bg-sage-light { background-color: var(--sage-light); }
+    .bg-cream { background-color: var(--cream); }
+    .bg-sand { background-color: var(--sand); }
+    .bg-terracotta { background-color: var(--terracotta); }
+    .bg-charcoal { background-color: var(--charcoal); }
+    .text-sage { color: var(--sage); }
+    .text-sage-deep { color: var(--sage-deep); }
+    .text-terracotta { color: var(--terracotta); }
+    .text-charcoal { color: var(--charcoal); }
+    .text-warm-muted { color: var(--warm-muted); }
+    .border-sand { border-color: var(--sand); }
+    .border-sage { border-color: var(--sage); }
+    .hover-terracotta:hover { background-color: var(--terracotta-deep); }
+    .hover-sage:hover { background-color: var(--sage-deep); }
+    .hero-gradient {
+      background-image: linear-gradient(180deg, rgba(45,42,37,0.55) 0%, rgba(94,122,88,0.55) 100%), url('assets/hero-1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .cta-strip {
+      background-image: linear-gradient(135deg, rgba(94,122,88,0.92) 0%, rgba(125,155,118,0.85) 100%), url('assets/studio-1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .class-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .class-card:hover { transform: translateY(-4px); box-shadow: 0 25px 50px -20px rgba(94,122,88,0.3); }
+    .schedule-slot { transition: all 0.15s ease; cursor: pointer; }
+    .schedule-slot:hover { background: var(--cream); }
+    .schedule-slot.full { opacity: 0.5; }
+    .schedule-slot.featured { background: var(--terracotta); color: white; }
+    .schedule-slot.featured .text-warm-muted { color: rgba(255,255,255,0.8); }
+    .price-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .price-card:hover { transform: translateY(-4px); box-shadow: 0 25px 50px -20px rgba(94,122,88,0.25); }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top utility bar -->
+  <div class="bg-sage-deep text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-sage-light" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 016 6c0 4-6 10-6 10S4 12 4 8a6 6 0 016-6zm0 4a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          Chesapeake &amp; Virginia Beach
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-sage-light" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .27.144.518.378.651l3 1.5a.75.75 0 10.744-1.302L10.75 9.566V5z"/></svg>
+          Open 7 days, see schedule
+        </span>
+      </div>
+      <a href="tel:7575723203" class="font-semibold inline-flex items-center gap-1.5 hover:text-sage-light">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3.5A1.5 1.5 0 013.5 2h2.879a1.5 1.5 0 011.06.44l1.122 1.12a1.5 1.5 0 01.351 1.561l-.557 1.671a1.5 1.5 0 00.36 1.518l3.474 3.474a1.5 1.5 0 001.518.36l1.671-.557a1.5 1.5 0 011.561.35l1.122 1.122A1.5 1.5 0 0118 14.121V17a1.5 1.5 0 01-1.5 1.5h-1C7.387 18.5 1.5 12.613 1.5 5.5V4A1.5 1.5 0 012 3.5z"/></svg>
+        (757) 572-3203
+      </a>
+    </div>
+  </div>
+
+  <!-- Main nav -->
+  <header class="sticky top-0 z-40 bg-white-warm shadow-sm" style="background-color: var(--white-warm);">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Dawn Pilates Studio" class="h-14 w-auto" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 font-medium text-charcoal">
+        <a href="#classes" class="hover:text-terracotta transition">Classes</a>
+        <a href="#schedule" class="hover:text-terracotta transition">Schedule</a>
+        <a href="#instructors" class="hover:text-terracotta transition">Instructors</a>
+        <a href="#memberships" class="hover:text-terracotta transition">Memberships</a>
+        <a href="#book" class="hover:text-terracotta transition">Book Now</a>
+        <a href="#contact" class="hover:text-terracotta transition">Locations</a>
+      </nav>
+      <a href="#book" class="hidden sm:inline-flex bg-terracotta hover-terracotta text-white font-semibold px-5 py-2.5 rounded-full shadow-md transition">Book First Class</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero-gradient text-white relative">
+    <div class="max-w-7xl mx-auto px-4 py-24 md:py-36">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+          <span class="w-2 h-2 bg-terracotta rounded-full"></span>
+          New students: First class on us
+        </div>
+        <h1 class="font-display text-5xl md:text-7xl leading-[1.05] mb-6">
+          Pilates that meets you<br/>
+          <em class="text-sage-light not-italic" style="color:#d4dccf">where you are.</em>
+        </h1>
+        <p class="text-lg md:text-xl text-white/90 mb-8 max-w-2xl font-light leading-relaxed">
+          Boutique Reformer Pilates in Chesapeake and Virginia Beach. Small classes, certified instructors, and a community that believes movement is medicine for the body and the mind.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#book" class="inline-flex items-center gap-2 bg-terracotta hover-terracotta text-white font-semibold px-7 py-4 rounded-full shadow-lg transition text-lg">
+            Book Your First Class
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="#schedule" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-semibold px-7 py-4 rounded-full transition text-lg">
+            View Schedule
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / philosophy -->
+  <section class="bg-cream border-b border-sand">
+    <div class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="font-display text-5xl text-sage-deep">7+</div>
+          <div class="text-sm text-warm-muted uppercase tracking-widest mt-2">Years Strong</div>
+        </div>
+        <div>
+          <div class="font-display text-5xl text-sage-deep">2</div>
+          <div class="text-sm text-warm-muted uppercase tracking-widest mt-2">Studios</div>
+        </div>
+        <div>
+          <div class="font-display text-5xl text-sage-deep">8</div>
+          <div class="text-sm text-warm-muted uppercase tracking-widest mt-2">Max per Class</div>
+        </div>
+        <div>
+          <div class="font-display text-5xl text-sage-deep">7</div>
+          <div class="text-sm text-warm-muted uppercase tracking-widest mt-2">Days a Week</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classes -->
+  <section id="classes" class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="text-terracotta font-semibold uppercase tracking-[0.2em] text-xs mb-3">What We Offer</div>
+        <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-4">Movement for Every Body</h2>
+        <p class="text-warm-muted text-lg font-light leading-relaxed">Reformer-based, small-group, and tailored to where you are right now. Whether you're recovering, returning, or just starting out.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="class-card bg-white rounded-2xl overflow-hidden border border-sand">
+          <div class="aspect-[5/4] overflow-hidden">
+            <img src="assets/studio-1.jpg" alt="Reformer Pilates" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl text-charcoal mb-2">Reformer Pilates</h3>
+            <p class="text-warm-muted text-sm leading-relaxed mb-4">Our signature class. Spring-loaded resistance on the Reformer apparatus, scaled for any fitness level. Builds long, lean strength without joint strain.</p>
+            <div class="flex items-center gap-2 text-xs text-warm-muted">
+              <span class="bg-sage/10 text-sage-deep px-2.5 py-1 rounded-full font-semibold">All Levels</span>
+              <span class="bg-sand text-charcoal px-2.5 py-1 rounded-full font-semibold">50 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card bg-white rounded-2xl overflow-hidden border border-sand">
+          <div class="aspect-[5/4] overflow-hidden">
+            <img src="assets/class-1.jpg" alt="Group Mat" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl text-charcoal mb-2">Group Mat</h3>
+            <p class="text-warm-muted text-sm leading-relaxed mb-4">Classic Pilates principles on the mat. Core strength, breath, and control. A perfect entry point or a complement to Reformer work.</p>
+            <div class="flex items-center gap-2 text-xs text-warm-muted">
+              <span class="bg-sage/10 text-sage-deep px-2.5 py-1 rounded-full font-semibold">All Levels</span>
+              <span class="bg-sand text-charcoal px-2.5 py-1 rounded-full font-semibold">45 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card bg-white rounded-2xl overflow-hidden border border-sand">
+          <div class="aspect-[5/4] overflow-hidden">
+            <img src="assets/trx-1.jpg" alt="TRX Suspension" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl text-charcoal mb-2">TRX Suspension</h3>
+            <p class="text-warm-muted text-sm leading-relaxed mb-4">Full-body strength using bodyweight and suspension straps. Pairs beautifully with Pilates for cross-training that complements without competing.</p>
+            <div class="flex items-center gap-2 text-xs text-warm-muted">
+              <span class="bg-sage/10 text-sage-deep px-2.5 py-1 rounded-full font-semibold">All Levels</span>
+              <span class="bg-sand text-charcoal px-2.5 py-1 rounded-full font-semibold">45 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card bg-white rounded-2xl overflow-hidden border border-sand">
+          <div class="aspect-[5/4] overflow-hidden">
+            <img src="assets/class-2.jpg" alt="Private Session" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl text-charcoal mb-2">Private Sessions</h3>
+            <p class="text-warm-muted text-sm leading-relaxed mb-4">One instructor, all eyes on you. Ideal for new students, returning after injury, or anyone who wants to dial in technique before joining group classes.</p>
+            <div class="flex items-center gap-2 text-xs text-warm-muted">
+              <span class="bg-terracotta/10 text-terracotta px-2.5 py-1 rounded-full font-semibold">By Appt</span>
+              <span class="bg-sand text-charcoal px-2.5 py-1 rounded-full font-semibold">55 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card bg-white rounded-2xl overflow-hidden border border-sand">
+          <div class="aspect-[5/4] overflow-hidden">
+            <img src="assets/studio-2.jpg" alt="Pilates Foundations 101" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl text-charcoal mb-2">Pilates Foundations 101</h3>
+            <p class="text-warm-muted text-sm leading-relaxed mb-4">A focused workshop for breath, alignment, and the foundational moves. Get more out of every Reformer class by mastering the building blocks.</p>
+            <div class="flex items-center gap-2 text-xs text-warm-muted">
+              <span class="bg-terracotta/10 text-terracotta px-2.5 py-1 rounded-full font-semibold">New Students</span>
+              <span class="bg-sand text-charcoal px-2.5 py-1 rounded-full font-semibold">60 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card bg-charcoal text-white rounded-2xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="font-display text-3xl mb-3">Not Sure Where to Start?</div>
+            <p class="text-white/70 text-sm leading-relaxed mb-6">We'll match you to the right class based on your goals and any injuries or limitations. Reply with a few details and we'll line up your first session.</p>
+          </div>
+          <a href="#book" class="inline-flex items-center justify-center gap-2 bg-terracotta hover-terracotta text-white font-semibold px-5 py-3 rounded-full transition">Get Matched</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Schedule -->
+  <section id="schedule" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-12">
+        <div class="text-terracotta font-semibold uppercase tracking-[0.2em] text-xs mb-3">This Week</div>
+        <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-4">Find Your Time</h2>
+        <p class="text-warm-muted text-lg font-light">Live schedule updates every Sunday. Reserve in two taps.</p>
+      </div>
+
+      <!-- Location tabs -->
+      <div class="flex justify-center gap-2 mb-8">
+        <button class="bg-sage-deep text-white font-semibold px-6 py-2.5 rounded-full text-sm">Chesapeake Studio</button>
+        <button class="bg-white text-charcoal border border-sand font-semibold px-6 py-2.5 rounded-full text-sm hover:border-sage transition">Virginia Beach Studio</button>
+      </div>
+
+      <!-- Schedule grid -->
+      <div class="bg-white rounded-2xl border border-sand overflow-hidden shadow-sm">
+        <!-- Days header -->
+        <div class="grid grid-cols-8 bg-sage text-white text-sm font-semibold">
+          <div class="p-4 border-r border-white/20">Time</div>
+          <div class="p-4 text-center border-r border-white/20">Mon Jun 1</div>
+          <div class="p-4 text-center border-r border-white/20">Tue Jun 2</div>
+          <div class="p-4 text-center border-r border-white/20">Wed Jun 3</div>
+          <div class="p-4 text-center border-r border-white/20">Thu Jun 4</div>
+          <div class="p-4 text-center border-r border-white/20">Fri Jun 5</div>
+          <div class="p-4 text-center border-r border-white/20">Sat Jun 6</div>
+          <div class="p-4 text-center">Sun Jun 7</div>
+        </div>
+
+        <!-- 6:00 AM row -->
+        <div class="grid grid-cols-8 border-b border-sand text-sm">
+          <div class="p-4 font-semibold text-warm-muted border-r border-sand bg-cream">6:00 AM</div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Christine &middot; 3 spots</div></div>
+          <div class="border-r border-sand"></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Christine &middot; 1 spot</div></div>
+          <div class="border-r border-sand"></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Christine &middot; 5 spots</div></div>
+          <div class="border-r border-sand"></div>
+          <div></div>
+        </div>
+
+        <!-- 9:00 AM row -->
+        <div class="grid grid-cols-8 border-b border-sand text-sm">
+          <div class="p-4 font-semibold text-warm-muted border-r border-sand bg-cream">9:00 AM</div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Mat</div><div class="text-warm-muted text-xs">w/ Diane &middot; 6 spots</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Diane &middot; 2 spots</div></div>
+          <div class="schedule-slot full p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">Waitlist</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Mat</div><div class="text-warm-muted text-xs">w/ Diane &middot; 4 spots</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Diane &middot; 3 spots</div></div>
+          <div class="schedule-slot featured p-3 border-r border-sand"><div class="font-semibold">Foundations</div><div class="text-xs">w/ Diane &middot; 4 spots</div></div>
+          <div class="schedule-slot p-3"><div class="font-semibold text-charcoal">Mat</div><div class="text-warm-muted text-xs">w/ Diane &middot; 7 spots</div></div>
+        </div>
+
+        <!-- 10:30 AM row -->
+        <div class="grid grid-cols-8 border-b border-sand text-sm">
+          <div class="p-4 font-semibold text-warm-muted border-r border-sand bg-cream">10:30 AM</div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Christine &middot; 4 spots</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">TRX</div><div class="text-warm-muted text-xs">w/ Christine &middot; 5 spots</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Diane &middot; 2 spots</div></div>
+          <div class="schedule-slot full p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">Waitlist</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Diane &middot; 3 spots</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Christine &middot; 1 spot</div></div>
+          <div></div>
+        </div>
+
+        <!-- 5:30 PM row -->
+        <div class="grid grid-cols-8 border-b border-sand text-sm">
+          <div class="p-4 font-semibold text-warm-muted border-r border-sand bg-cream">5:30 PM</div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Christine &middot; 4 spots</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Diane &middot; 6 spots</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Mat</div><div class="text-warm-muted text-xs">w/ Diane &middot; 8 spots</div></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Christine &middot; 5 spots</div></div>
+          <div class="border-r border-sand"></div>
+          <div class="border-r border-sand"></div>
+          <div></div>
+        </div>
+
+        <!-- 6:45 PM row -->
+        <div class="grid grid-cols-8 text-sm">
+          <div class="p-4 font-semibold text-warm-muted border-r border-sand bg-cream">6:45 PM</div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">TRX</div><div class="text-warm-muted text-xs">w/ Christine &middot; 6 spots</div></div>
+          <div class="border-r border-sand"></div>
+          <div class="schedule-slot p-3 border-r border-sand"><div class="font-semibold text-charcoal">Reformer</div><div class="text-warm-muted text-xs">w/ Diane &middot; 4 spots</div></div>
+          <div class="border-r border-sand"></div>
+          <div class="border-r border-sand"></div>
+          <div class="border-r border-sand"></div>
+          <div></div>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-warm-muted mt-6">Tap any class to reserve. Cancellations more than 12 hours out are free, no questions asked.</p>
+    </div>
+  </section>
+
+  <!-- Meet Your Instructors -->
+  <section id="instructors" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="text-terracotta font-semibold uppercase tracking-[0.2em] text-xs mb-3">The Team</div>
+        <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-4">Meet Your Instructors</h2>
+        <p class="text-warm-muted text-lg font-light">Certified, experienced, and genuinely invested in your progress.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-cream rounded-2xl overflow-hidden">
+          <div class="aspect-square overflow-hidden">
+            <img src="assets/instructor-christine.png" alt="Christine, Pilates instructor" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-7">
+            <h3 class="font-display text-3xl text-charcoal mb-1">Christine</h3>
+            <div class="text-sage-deep font-semibold text-sm mb-4">Reformer &amp; TRX Specialist</div>
+            <p class="text-warm-muted text-sm leading-relaxed">Christine leads our morning and evening Reformer sessions with a focus on alignment, breath, and steady progression. Specializes in TRX Suspension cross-training for clients who want to build complementary strength.</p>
+          </div>
+        </div>
+
+        <div class="bg-cream rounded-2xl overflow-hidden">
+          <div class="aspect-square overflow-hidden">
+            <img src="assets/instructor-diane.jpeg" alt="Diane, Pilates instructor" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-7">
+            <h3 class="font-display text-3xl text-charcoal mb-1">Diane</h3>
+            <div class="text-sage-deep font-semibold text-sm mb-4">Reformer, Mat &amp; Foundations</div>
+            <p class="text-warm-muted text-sm leading-relaxed">Diane teaches Reformer, Mat, and our Foundations workshops, with a gift for meeting new students exactly where they are. Patient, precise, and the reason a lot of our students stuck around past their first class.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Memberships -->
+  <section id="memberships" class="py-20 md:py-28 bg-sand">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="text-terracotta font-semibold uppercase tracking-[0.2em] text-xs mb-3">Memberships</div>
+        <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-4">Simple, Honest Pricing</h2>
+        <p class="text-warm-muted text-lg font-light">No contracts. Cancel any time. Pause when life happens.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="price-card bg-white rounded-2xl p-8 border border-sand">
+          <div class="text-sm text-warm-muted uppercase tracking-widest mb-2">Drop In</div>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="font-display text-5xl text-charcoal">$28</span>
+            <span class="text-warm-muted text-sm">per class</span>
+          </div>
+          <p class="text-warm-muted text-sm mb-6">Best for curious first-timers or schedules that don't fit a regular cadence.</p>
+          <ul class="space-y-3 mb-8 text-sm">
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>Any class type</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>Both locations</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>No commitment</li>
+          </ul>
+          <a href="#book" class="block text-center bg-white border-2 border-sage-deep text-sage-deep font-semibold py-3 rounded-full hover:bg-sage-deep hover:text-white transition">Try a Class</a>
+        </div>
+
+        <div class="price-card bg-sage-deep text-white rounded-2xl p-8 relative shadow-xl">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-terracotta text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+          <div class="text-sm text-white/70 uppercase tracking-widest mb-2">Unlimited</div>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="font-display text-5xl">$189</span>
+            <span class="text-white/70 text-sm">/ month</span>
+          </div>
+          <p class="text-white/80 text-sm mb-6">For the regulars. Come as often as you want, at either studio.</p>
+          <ul class="space-y-3 mb-8 text-sm">
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-light flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>Unlimited group classes</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-light flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>Reformer, Mat, TRX</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-light flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>15% off private sessions</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-light flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>Pause up to 30 days</li>
+          </ul>
+          <a href="#book" class="block text-center bg-terracotta hover-terracotta text-white font-semibold py-3 rounded-full transition">Start Unlimited</a>
+        </div>
+
+        <div class="price-card bg-white rounded-2xl p-8 border border-sand">
+          <div class="text-sm text-warm-muted uppercase tracking-widest mb-2">8 Pack</div>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="font-display text-5xl text-charcoal">$199</span>
+            <span class="text-warm-muted text-sm">/ 8 classes</span>
+          </div>
+          <p class="text-warm-muted text-sm mb-6">$25 per class. Great middle ground if you're getting consistent without going all-in.</p>
+          <ul class="space-y-3 mb-8 text-sm">
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>3 month expiration</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>Any class type</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>Shareable with family</li>
+          </ul>
+          <a href="#book" class="block text-center bg-white border-2 border-sage-deep text-sage-deep font-semibold py-3 rounded-full hover:bg-sage-deep hover:text-white transition">Buy 8 Pack</a>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-warm-muted mt-8">Sample pricing for layout purposes. Final rates set by the studio.</p>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="book" class="py-20 md:py-28 bg-sage-deep text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image:url('assets/hero-1.jpg');background-size:cover;background-position:center;"></div>
+    <div class="max-w-5xl mx-auto px-4 relative">
+      <div class="text-center mb-12">
+        <div class="text-sage-light font-semibold uppercase tracking-[0.2em] text-xs mb-3">First Class</div>
+        <h2 class="font-display text-4xl md:text-5xl mb-4">Book Your First Visit</h2>
+        <p class="text-white/80 text-lg font-light max-w-2xl mx-auto">Complimentary for new students. Pick a time that works and we'll handle the rest.</p>
+      </div>
+
+      <div class="bg-white text-charcoal rounded-2xl shadow-2xl p-6 md:p-10">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <label class="block text-sm font-semibold text-charcoal mb-2 uppercase tracking-widest">Class Type</label>
+            <select class="w-full border-2 border-sand rounded-lg px-4 py-3 mb-5 focus:border-sage focus:outline-none">
+              <option>Reformer Pilates (recommended for first-timers)</option>
+              <option>Group Mat</option>
+              <option>Pilates Foundations 101</option>
+              <option>TRX Suspension</option>
+              <option>Private Session</option>
+            </select>
+
+            <label class="block text-sm font-semibold text-charcoal mb-2 uppercase tracking-widest">Studio Location</label>
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <button type="button" class="border-2 border-sage bg-sage/5 text-charcoal font-semibold py-3 rounded-lg">Chesapeake</button>
+              <button type="button" class="border-2 border-sand text-warm-muted font-semibold py-3 rounded-lg hover:border-warm-muted">Virginia Beach</button>
+            </div>
+
+            <label class="block text-sm font-semibold text-charcoal mb-2 uppercase tracking-widest">Have You Done Pilates Before?</label>
+            <div class="grid grid-cols-3 gap-2 mb-5 text-sm">
+              <button type="button" class="border-2 border-sage bg-sage/5 text-charcoal font-semibold py-2.5 rounded-lg">First time</button>
+              <button type="button" class="border-2 border-sand text-warm-muted font-semibold py-2.5 rounded-lg">Some</button>
+              <button type="button" class="border-2 border-sand text-warm-muted font-semibold py-2.5 rounded-lg">Regular</button>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <input type="text" placeholder="Your name" class="border-2 border-sand rounded-lg px-4 py-3 focus:border-sage focus:outline-none" />
+              <input type="tel" placeholder="Phone" class="border-2 border-sand rounded-lg px-4 py-3 focus:border-sage focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-charcoal mb-2 uppercase tracking-widest">Pick a Day</label>
+            <div class="grid grid-cols-4 gap-2 mb-5">
+              <div class="text-center border-2 border-sand rounded-lg py-3 hover:border-sage cursor-pointer">
+                <div class="text-xs text-warm-muted">MON</div>
+                <div class="font-bold text-lg">2</div>
+                <div class="text-xs text-warm-muted">Jun</div>
+              </div>
+              <div class="text-center border-2 border-sage bg-sage text-white rounded-lg py-3 cursor-pointer">
+                <div class="text-xs opacity-80">TUE</div>
+                <div class="font-bold text-lg">3</div>
+                <div class="text-xs opacity-80">Jun</div>
+              </div>
+              <div class="text-center border-2 border-sand rounded-lg py-3 hover:border-sage cursor-pointer">
+                <div class="text-xs text-warm-muted">WED</div>
+                <div class="font-bold text-lg">4</div>
+                <div class="text-xs text-warm-muted">Jun</div>
+              </div>
+              <div class="text-center border-2 border-sand rounded-lg py-3 hover:border-sage cursor-pointer">
+                <div class="text-xs text-warm-muted">THU</div>
+                <div class="font-bold text-lg">5</div>
+                <div class="text-xs text-warm-muted">Jun</div>
+              </div>
+            </div>
+
+            <label class="block text-sm font-semibold text-charcoal mb-2 uppercase tracking-widest">Class Times for Tue Jun 3</label>
+            <div class="grid grid-cols-2 gap-2 mb-6">
+              <div class="border-2 border-sand rounded-lg p-3 hover:border-sage cursor-pointer">
+                <div class="font-bold text-charcoal">9:00 AM</div>
+                <div class="text-xs text-warm-muted">Reformer &middot; Diane</div>
+              </div>
+              <div class="border-2 border-terracotta bg-terracotta/5 rounded-lg p-3 cursor-pointer">
+                <div class="font-bold text-terracotta">10:30 AM</div>
+                <div class="text-xs text-warm-muted">TRX &middot; Christine</div>
+              </div>
+              <div class="border-2 border-sand rounded-lg p-3 hover:border-sage cursor-pointer">
+                <div class="font-bold text-charcoal">5:30 PM</div>
+                <div class="text-xs text-warm-muted">Reformer &middot; Diane</div>
+              </div>
+              <div class="border-2 border-sand rounded-lg p-3 opacity-50 cursor-not-allowed">
+                <div class="font-bold text-charcoal">6:45 PM</div>
+                <div class="text-xs text-warm-muted">Waitlist only</div>
+              </div>
+            </div>
+
+            <button type="button" class="w-full bg-terracotta hover-terracotta text-white font-bold py-4 rounded-full shadow-lg transition text-lg">
+              Reserve Tue Jun 3, 10:30 AM
+            </button>
+            <p class="text-center text-xs text-warm-muted mt-3">First class is complimentary. We'll text to confirm and welcome you.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 text-white/70">
+        Questions first? Email <a href="mailto:amanda@dawnpilates.net" class="font-semibold text-white hover:text-sage-light">amanda@dawnpilates.net</a> or call <a href="tel:7575723203" class="font-semibold text-white hover:text-sage-light">(757) 572-3203</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio philosophy / Our Story -->
+  <section class="py-20 md:py-28 bg-cream">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="text-terracotta font-semibold uppercase tracking-[0.2em] text-xs mb-3">Our Story</div>
+        <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-6 leading-tight">"Exercise is medicine for the body and mind."</h2>
+        <p class="text-warm-muted leading-relaxed mb-4">Dawn Pilates Studio was born from a simple conviction: that Pilates can help anyone, at any stage of life, gain back natural mobility and recover from the things that knock us down.</p>
+        <p class="text-warm-muted leading-relaxed mb-4">Seven years in, we're a boutique Reformer studio with two locations, a tight-knit team of certified instructors, and a community of regulars who have made movement a non-negotiable part of their week.</p>
+        <p class="text-warm-muted leading-relaxed">Whether you're recovering, returning, or just starting out, the door is open.</p>
+      </div>
+      <div class="relative">
+        <img src="assets/studio-2.jpg" alt="Inside Dawn Pilates Studio" class="rounded-2xl shadow-xl w-full" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section id="contact" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <div class="text-terracotta font-semibold uppercase tracking-[0.2em] text-xs mb-3">Find Us</div>
+        <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-4">Two Studios, One Community</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-cream rounded-2xl p-8">
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div>
+              <h3 class="font-display text-3xl text-charcoal">Chesapeake Studio</h3>
+              <div class="text-sage-deep font-semibold text-sm">Our original location</div>
+            </div>
+            <div class="bg-sage/10 text-sage-deep px-3 py-1 rounded-full text-xs font-semibold">Open 7 days</div>
+          </div>
+          <div class="space-y-2 text-warm-muted text-sm mb-5">
+            <div class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 016 6c0 4-6 10-6 10S4 12 4 8a6 6 0 016-6zm0 4a2 2 0 100 4 2 2 0 000-4z"/></svg>
+              <span>501 Kempsville Road, Suite E<br/>Chesapeake, VA 23320</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3.5A1.5 1.5 0 013.5 2h2.879a1.5 1.5 0 011.06.44l1.122 1.12a1.5 1.5 0 01.351 1.561l-.557 1.671a1.5 1.5 0 00.36 1.518l3.474 3.474a1.5 1.5 0 001.518.36l1.671-.557a1.5 1.5 0 011.561.35l1.122 1.122A1.5 1.5 0 0118 14.121V17a1.5 1.5 0 01-1.5 1.5h-1C7.387 18.5 1.5 12.613 1.5 5.5V4A1.5 1.5 0 012 3.5z"/></svg>
+              <a href="tel:7575723203" class="hover:text-sage-deep">(757) 572-3203</a>
+            </div>
+          </div>
+          <a href="#book" class="block text-center bg-sage-deep hover-sage text-white font-semibold py-3 rounded-full transition">Book at Chesapeake</a>
+        </div>
+
+        <div class="bg-cream rounded-2xl p-8">
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div>
+              <h3 class="font-display text-3xl text-charcoal">Virginia Beach Studio</h3>
+              <div class="text-sage-deep font-semibold text-sm">Our newer space, in Hilltop</div>
+            </div>
+            <div class="bg-terracotta/10 text-terracotta px-3 py-1 rounded-full text-xs font-semibold">New Location</div>
+          </div>
+          <div class="space-y-2 text-warm-muted text-sm mb-5">
+            <div class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 016 6c0 4-6 10-6 10S4 12 4 8a6 6 0 016-6zm0 4a2 2 0 100 4 2 2 0 000-4z"/></svg>
+              <span>1400 Kempsville Road, Suite 118<br/>Virginia Beach, VA 23464</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-sage-deep flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3.5A1.5 1.5 0 013.5 2h2.879a1.5 1.5 0 011.06.44l1.122 1.12a1.5 1.5 0 01.351 1.561l-.557 1.671a1.5 1.5 0 00.36 1.518l3.474 3.474a1.5 1.5 0 001.518.36l1.671-.557a1.5 1.5 0 011.561.35l1.122 1.122A1.5 1.5 0 0118 14.121V17a1.5 1.5 0 01-1.5 1.5h-1C7.387 18.5 1.5 12.613 1.5 5.5V4A1.5 1.5 0 012 3.5z"/></svg>
+              <a href="tel:7575723203" class="hover:text-sage-deep">(757) 572-3203</a>
+            </div>
+          </div>
+          <a href="#book" class="block text-center bg-sage-deep hover-sage text-white font-semibold py-3 rounded-full transition">Book at Virginia Beach</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-strip text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display text-4xl md:text-5xl mb-4">Ready to Begin?</h2>
+      <p class="text-lg text-white/85 mb-8 max-w-2xl mx-auto font-light">Your first class is on us. No pressure to come back, no contract to sign. Just movement, breath, and a small room of people glad to see you.</p>
+      <a href="#book" class="inline-block bg-terracotta hover-terracotta text-white font-bold px-8 py-4 rounded-full shadow-xl text-lg">Book Your First Class</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <img src="assets/logo.png" alt="Dawn Pilates Studio" class="h-16 mb-4 bg-cream p-3 rounded-lg inline-block" />
+          <p class="text-white/70 text-sm leading-relaxed max-w-md">
+            Boutique Reformer Pilates with locations in Chesapeake and Virginia Beach. Small classes, certified instructors, a community for every body at every stage of life.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-widest text-xs mb-4 text-sage-light">Contact</h4>
+          <ul class="space-y-2 text-white/80 text-sm">
+            <li><a href="tel:7575723203" class="hover:text-white">(757) 572-3203</a></li>
+            <li><a href="mailto:amanda@dawnpilates.net" class="hover:text-white break-all">amanda@dawnpilates.net</a></li>
+          </ul>
+          <h4 class="font-bold uppercase tracking-widest text-xs mb-3 mt-6 text-sage-light">Follow</h4>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/Dawn-Pilates-Studio-VA-546843629137588/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-sage flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+            <a href="https://instagram.com/dawnpilatesstudio" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-sage flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-widest text-xs mb-4 text-sage-light">Studios</h4>
+          <ul class="space-y-3 text-white/80 text-sm">
+            <li>
+              <div class="font-semibold text-white">Chesapeake</div>
+              <div>501 Kempsville Rd, Ste E</div>
+            </li>
+            <li>
+              <div class="font-semibold text-white">Virginia Beach</div>
+              <div>1400 Kempsville Rd, Ste 118</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 text-xs text-white/50 flex flex-col md:flex-row justify-between gap-3">
+        <div>&copy; 2026 Dawn Pilates Studio. All rights reserved.</div>
+        <div>Boutique Reformer Pilates &middot; Open 7 days</div>
+      </div>
+
+      <div class="mt-8 p-4 bg-terracotta/10 border border-terracotta/30 rounded-lg text-xs text-white/80">
+        <strong class="text-white">Unofficial preview / spec mockup.</strong> This page is a redesign concept created by <a href="https://derrellwillis.com" class="underline hover:text-white">Derrell Willis</a> for evaluation purposes only. Not affiliated with or endorsed by Dawn Pilates Studio. The live site is <a href="http://www.dawnpilates.net" class="underline hover:text-white">dawnpilates.net</a>. Sample schedule and pricing shown for layout purposes only.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-sticky-cta fixed bottom-0 left-0 right-0 bg-white border-t border-sand p-3 z-50 hidden gap-2 shadow-2xl">
+    <a href="tel:7575723203" class="flex-1 bg-sage-deep text-white font-bold py-3 rounded-full text-center text-sm">Call Studio</a>
+    <a href="#book" class="flex-1 bg-terracotta text-white font-bold py-3 rounded-full text-center text-sm">First Class</a>
+  </div>
+
+</body>
+</html>

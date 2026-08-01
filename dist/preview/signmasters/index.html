@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Signmasters | Custom Signs, Vehicle Wraps &amp; Banners in Virginia Beach Since 1975</title>
+  <meta name="description" content="Virginia Beach's sign shop since 1975. Custom signage, vehicle and fleet wraps, banners, murals, and window graphics. In-house design to installation. SWaM certified. (757) 499-0615." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Anton&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #0f2747;
+      --navy-deep: #0a1c34;
+      --blue: #1f8fd0;
+      --blue-bright: #38b6ff;
+      --red: #dc2626;
+      --red-dark: #b91c1c;
+      --cream: #f7f2e8;
+      --sand: #ece6d8;
+      --ink: #0e1726;
+      --muted: #5b6b7e;
+      --steel: #64748b;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); }
+    .font-display { font-family: 'Anton', 'Inter', sans-serif; letter-spacing: 0.02em; }
+    .bg-navy { background-color: var(--navy); }
+    .bg-navy-deep { background-color: var(--navy-deep); }
+    .bg-blue { background-color: var(--blue); }
+    .bg-blue-bright { background-color: var(--blue-bright); }
+    .bg-cream { background-color: var(--cream); }
+    .bg-sand { background-color: var(--sand); }
+    .bg-red { background-color: var(--red); }
+    .text-navy { color: var(--navy); }
+    .text-blue { color: var(--blue); }
+    .text-blue-bright { color: var(--blue-bright); }
+    .text-red { color: var(--red); }
+    .text-muted { color: var(--muted); }
+    .border-sand { border-color: var(--sand); }
+    .hover-red:hover { background-color: var(--red-dark); }
+    .hover-blue:hover { background-color: #1877ad; }
+    .hero-gradient {
+      background-image: linear-gradient(135deg, rgba(10,28,52,0.93) 0%, rgba(15,39,71,0.82) 45%, rgba(31,143,208,0.45) 100%), url('assets/work-3.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .cta-strip {
+      background-image: linear-gradient(90deg, rgba(10,28,52,0.95) 0%, rgba(15,39,71,0.82) 100%), url('assets/work-2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .service-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 25px 50px -20px rgba(15,39,71,0.28); }
+    .project-card img { transition: transform 0.5s ease; }
+    .project-card:hover img { transform: scale(1.05); }
+    .marquee { overflow: hidden; }
+    .marquee-track { display: inline-flex; white-space: nowrap; animation: scroll 38s linear infinite; }
+    @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex !important; }
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Top utility bar -->
+  <div class="bg-navy-deep text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-blue-bright" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 016 6c0 4-6 10-6 10S4 12 4 8a6 6 0 016-6zm0 4a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          246 Pennsylvania Ave, Virginia Beach
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-blue-bright" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.5 4v4.25l3.5 2.1-.75 1.23L9 11V6h1.5z"/></svg>
+          Mon to Fri, 9am to 5pm
+        </span>
+      </div>
+      <a href="tel:7574990615" class="font-semibold inline-flex items-center gap-1.5 hover:text-blue-bright">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3.5A1.5 1.5 0 013.5 2h2.879a1.5 1.5 0 011.06.44l1.122 1.12a1.5 1.5 0 01.351 1.561l-.557 1.671a1.5 1.5 0 00.36 1.518l3.474 3.474a1.5 1.5 0 001.518.36l1.671-.557a1.5 1.5 0 011.561.35l1.122 1.122A1.5 1.5 0 0118 14.121V17a1.5 1.5 0 01-1.5 1.5h-1C7.387 18.5 1.5 12.613 1.5 5.5V4A1.5 1.5 0 012 3.5z"/></svg>
+        (757) 499-0615
+      </a>
+    </div>
+  </div>
+
+  <!-- Main nav -->
+  <header class="sticky top-0 z-40 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Signmasters" class="h-14 w-auto" />
+        <div class="hidden md:block">
+          <div class="font-display text-lg text-navy leading-none">SIGNMASTERS</div>
+          <div class="text-xs text-muted">Quality signage since 1975</div>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 font-medium text-navy">
+        <a href="#services" class="hover:text-red">Services</a>
+        <a href="#work" class="hover:text-red">Our Work</a>
+        <a href="#why" class="hover:text-red">Why Us</a>
+        <a href="#quote" class="hover:text-red">Get a Quote</a>
+        <a href="#contact" class="hover:text-red">Contact</a>
+      </nav>
+      <a href="#quote" class="hidden sm:inline-flex bg-red hover-red text-white font-semibold px-5 py-2.5 rounded-lg shadow-md transition">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero-gradient text-white">
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-32">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 px-3 py-1.5 rounded-full text-sm font-medium mb-6">
+          <span class="w-2 h-2 bg-blue-bright rounded-full animate-pulse"></span>
+          Family-run on Pennsylvania Avenue since 1975
+        </div>
+        <h1 class="font-display text-5xl md:text-7xl uppercase leading-[0.95] mb-6">
+          Virginia Beach's<br/>
+          <span class="text-blue-bright">Sign Shop Since 1975.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
+          Transform your brand with custom signs, vehicle wraps, and banners. Fifty years of design, fabrication, and installation under one roof in Virginia Beach.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#quote" class="inline-flex items-center gap-2 bg-red hover-red text-white font-semibold px-6 py-3.5 rounded-lg shadow-lg transition text-lg">
+            Get a Free Quote
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="tel:7574990615" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-semibold px-6 py-3.5 rounded-lg transition text-lg">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3.5A1.5 1.5 0 013.5 2h2.879a1.5 1.5 0 011.06.44l1.122 1.12a1.5 1.5 0 01.351 1.561l-.557 1.671a1.5 1.5 0 00.36 1.518l3.474 3.474a1.5 1.5 0 001.518.36l1.671-.557a1.5 1.5 0 011.561.35l1.122 1.122A1.5 1.5 0 0118 14.121V17a1.5 1.5 0 01-1.5 1.5h-1C7.387 18.5 1.5 12.613 1.5 5.5V4A1.5 1.5 0 012 3.5z"/></svg>
+            (757) 499-0615
+          </a>
+        </div>
+
+        <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-bright" fill="currentColor" viewBox="0 0 20 20"><path d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            Established 1975
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-bright" fill="currentColor" viewBox="0 0 20 20"><path d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            SWaM certified
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-bright" fill="currentColor" viewBox="0 0 20 20"><path d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            Design to installation, in house
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats strip -->
+  <section class="bg-cream border-y border-sand">
+    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="font-display text-4xl text-navy">1975</div>
+        <div class="text-sm text-muted uppercase tracking-wider mt-1">Established</div>
+      </div>
+      <div>
+        <div class="font-display text-4xl text-navy">50+</div>
+        <div class="text-sm text-muted uppercase tracking-wider mt-1">Years in Business</div>
+      </div>
+      <div>
+        <div class="font-display text-4xl text-navy">7</div>
+        <div class="text-sm text-muted uppercase tracking-wider mt-1">In-House Services</div>
+      </div>
+      <div>
+        <div class="font-display text-4xl text-navy">SWaM</div>
+        <div class="text-sm text-muted uppercase tracking-wider mt-1">State Certified</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="text-blue font-semibold uppercase tracking-widest text-sm mb-3">What We Make</div>
+        <h2 class="font-display text-4xl md:text-5xl uppercase text-navy mb-4">From Concept to Installed</h2>
+        <p class="text-muted text-lg">Design, print, fabricate, and install. Everything happens in one Virginia Beach shop, the way it has since 1975.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Branding & Design -->
+        <div class="service-card bg-white border border-sand rounded-2xl p-8">
+          <div class="w-14 h-14 rounded-xl bg-blue/10 text-blue flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+          </div>
+          <h3 class="font-bold text-xl text-navy mb-2">Branding &amp; Design</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Logo design, project design, and vectorizing. Bring a sketch or a finished file. Our designers get it press-ready and looking sharp at any size.</p>
+          <a href="#quote" class="text-blue font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Start a project <span>&rarr;</span></a>
+        </div>
+
+        <!-- Custom Signage -->
+        <div class="service-card bg-white border border-sand rounded-2xl p-8 overflow-hidden">
+          <img src="assets/work-2.jpg" alt="Dimensional interior lobby signage by Signmasters" class="w-full h-40 object-cover rounded-xl mb-5" />
+          <h3 class="font-bold text-xl text-navy mb-2">Custom Signage</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Dimensional lettering, monument and backlit signs, ADA signage, marquee signs, sandblasted and CAD-routed signs, real estate and job site signs.</p>
+          <a href="#quote" class="text-blue font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Start a project <span>&rarr;</span></a>
+        </div>
+
+        <!-- Vehicle & Fleet Wraps -->
+        <div class="service-card bg-white border border-sand rounded-2xl p-8 overflow-hidden">
+          <img src="assets/work-5.jpg" alt="Full vehicle wrap by Signmasters" class="w-full h-40 object-cover rounded-xl mb-5" />
+          <h3 class="font-bold text-xl text-navy mb-2">Vehicle &amp; Fleet Wraps</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Vehicle lettering, fleet lettering, full vehicle wraps, and transit wraps. Turn the truck you already drive into your hardest-working billboard.</p>
+          <a href="#quote" class="text-blue font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Start a project <span>&rarr;</span></a>
+        </div>
+
+        <!-- Banners -->
+        <div class="service-card bg-white border border-sand rounded-2xl p-8">
+          <div class="w-14 h-14 rounded-xl bg-blue/10 text-blue flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18M4 4v13a1 1 0 001 1h14a1 1 0 001-1V4M9 18v3m6-3v3"/></svg>
+          </div>
+          <h3 class="font-bold text-xl text-navy mb-2">Banners</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Flag pole banners, retractable banners, job site mesh banners, and trade show step-and-repeat backdrops. Built to read clearly and hold up outdoors.</p>
+          <a href="#quote" class="text-blue font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Start a project <span>&rarr;</span></a>
+        </div>
+
+        <!-- Murals -->
+        <div class="service-card bg-white border border-sand rounded-2xl p-8">
+          <div class="w-14 h-14 rounded-xl bg-blue/10 text-blue flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5z M4 15l4-4 4 4 4-5 4 5"/><circle cx="9" cy="9" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3 class="font-bold text-xl text-navy mb-2">Murals &amp; Wall Wraps</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Interior wall murals, art prints, and wallpaper prints. Turn a blank office or lobby wall into branded space that customers remember.</p>
+          <a href="#quote" class="text-blue font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Start a project <span>&rarr;</span></a>
+        </div>
+
+        <!-- Window Tint & Films -->
+        <div class="service-card bg-white border border-sand rounded-2xl p-8 overflow-hidden">
+          <img src="assets/work-4.jpg" alt="Window graphics by Signmasters" class="w-full h-40 object-cover rounded-xl mb-5" />
+          <h3 class="font-bold text-xl text-navy mb-2">Window Tint &amp; Films</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Decorative window films, frosted glass installations, window graphics, and automotive tint. Privacy, branding, and curb appeal in one pass.</p>
+          <a href="#quote" class="text-blue font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Start a project <span>&rarr;</span></a>
+        </div>
+      </div>
+
+      <!-- Installation callout -->
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 service-card bg-navy text-white rounded-2xl p-8 flex flex-col md:flex-row md:items-center gap-6">
+          <div class="w-14 h-14 shrink-0 rounded-xl bg-blue-bright/20 text-blue-bright flex items-center justify-center">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-1">Professional Installation, Including Out of State</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Expert sign and graphics installation by the same team that built the work. We travel for multi-location and out-of-state installs too.</p>
+          </div>
+        </div>
+        <div class="service-card bg-red text-white rounded-2xl p-8 flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-xl mb-2">Not Sure Where to Start?</h3>
+            <p class="text-white/80 text-sm leading-relaxed mb-6">Tell us what you are trying to do. We will point you to the right product and a ballpark, usually the same business day.</p>
+          </div>
+          <a href="#quote" class="inline-flex items-center justify-center gap-2 bg-white text-red font-semibold px-5 py-3 rounded-lg transition hover:bg-cream">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work -->
+  <section id="work" class="py-20 md:py-28 bg-sand">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="text-blue font-semibold uppercase tracking-widest text-sm mb-3">Recent Work</div>
+        <h2 class="font-display text-4xl md:text-5xl uppercase text-navy mb-4">Made in Virginia Beach</h2>
+        <p class="text-muted text-lg">Storefronts, fleets, lobbies, and job sites all over Hampton Roads. A few of the latest.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="project-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="assets/work-3.jpg" alt="Suffolk Electrical full van wrap" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-5">
+            <div class="text-xs text-blue font-semibold uppercase tracking-wider mb-1">Vehicle Wrap</div>
+            <div class="font-bold text-navy">Full van wrap, Suffolk Electrical</div>
+            <div class="text-sm text-muted mt-1">Edge to edge color wrap with contact details.</div>
+          </div>
+        </div>
+
+        <div class="project-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="assets/work-2.jpg" alt="Buzz Franchise Brands dimensional lobby signage" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-5">
+            <div class="text-xs text-blue font-semibold uppercase tracking-wider mb-1">Dimensional Signage</div>
+            <div class="font-bold text-navy">Interior lobby wall, Buzz Franchise Brands</div>
+            <div class="text-sm text-muted mt-1">Multi-brand dimensional letters and logos on reclaimed wood.</div>
+          </div>
+        </div>
+
+        <div class="project-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="assets/work-7.jpg" alt="Ocean View Fishing Pier marquee sign" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-5">
+            <div class="text-xs text-blue font-semibold uppercase tracking-wider mb-1">Custom Sign</div>
+            <div class="font-bold text-navy">Post-mounted marquee, Ocean View Fishing Pier</div>
+            <div class="text-sm text-muted mt-1">High-visibility roadside sign with service listing.</div>
+          </div>
+        </div>
+
+        <div class="project-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="assets/work-1.jpg" alt="Beyond Monet large format mesh banner" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-5">
+            <div class="text-xs text-blue font-semibold uppercase tracking-wider mb-1">Large Format Banner</div>
+            <div class="font-bold text-navy">Event mesh banner, Beyond Monet</div>
+            <div class="text-sm text-muted mt-1">Wide-span fence banner built for outdoor exposure.</div>
+          </div>
+        </div>
+
+        <div class="project-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="assets/work-6.jpg" alt="Kevcor Contracting post-mounted sign" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-5">
+            <div class="text-xs text-blue font-semibold uppercase tracking-wider mb-1">Post-Mounted Sign</div>
+            <div class="font-bold text-navy">Entrance sign, Kevcor Contracting</div>
+            <div class="text-sm text-muted mt-1">Durable exterior sign with matching mailbox lettering.</div>
+          </div>
+        </div>
+
+        <div class="project-card bg-navy text-white rounded-2xl overflow-hidden flex flex-col justify-center items-center text-center p-8">
+          <div class="font-display text-3xl uppercase mb-2 text-blue-bright">See More on Social</div>
+          <p class="text-white/80 text-sm mb-5">New signs, wraps, and installs go up on Facebook and Instagram every week.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/signmastersvb" target="_blank" rel="noopener" class="bg-red hover-red px-5 py-2.5 rounded-lg font-semibold transition">Facebook</a>
+            <a href="https://www.instagram.com/signmastersvb" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 border border-white/30 px-5 py-2.5 rounded-lg font-semibold transition">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Signmasters -->
+  <section id="why" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="text-blue font-semibold uppercase tracking-widest text-sm mb-3">Why Signmasters</div>
+          <h2 class="font-display text-4xl md:text-5xl uppercase text-navy mb-6">Half a Century of Signs, Same Pennsylvania Avenue Shop.</h2>
+          <p class="text-muted text-lg leading-relaxed mb-6">
+            Since 1975, Signmasters has designed, printed, fabricated, and installed signage for Virginia Beach businesses. One team handles the whole job, from the first sketch to the final install, so nothing gets lost in a handoff.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 w-6 h-6 shrink-0 rounded-full bg-blue/10 text-blue flex items-center justify-center"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+              <div><span class="font-semibold text-navy">In-house from design to install.</span> <span class="text-muted">Branding, print, fabrication, and installation all under one roof.</span></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 w-6 h-6 shrink-0 rounded-full bg-blue/10 text-blue flex items-center justify-center"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+              <div><span class="font-semibold text-navy">SWaM certified.</span> <span class="text-muted">A Virginia-certified Small, Women-owned, and Minority-owned business.</span></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 w-6 h-6 shrink-0 rounded-full bg-blue/10 text-blue flex items-center justify-center"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+              <div><span class="font-semibold text-navy">Hampton Roads Chamber member.</span> <span class="text-muted">Rooted in the local business community, listed on WrapMapper.</span></div>
+            </div>
+          </div>
+          <a href="#quote" class="mt-8 inline-flex items-center gap-2 bg-navy hover:bg-navy-deep text-white font-semibold px-6 py-3.5 rounded-lg shadow-lg transition">
+            Start Your Project
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="assets/work-2.jpg" alt="Dimensional interior signage" class="rounded-2xl object-cover w-full h-56 shadow-sm" />
+          <img src="assets/work-5.jpg" alt="Vehicle wrap" class="rounded-2xl object-cover w-full h-56 shadow-sm mt-8" />
+          <img src="assets/work-6.jpg" alt="Post-mounted sign" class="rounded-2xl object-cover w-full h-56 shadow-sm" />
+          <img src="assets/work-4.jpg" alt="Window graphics" class="rounded-2xl object-cover w-full h-56 shadow-sm mt-8" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted by (client marquee) -->
+  <section class="py-14 bg-navy text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 text-center mb-8">
+      <div class="text-blue-bright font-semibold uppercase tracking-widest text-sm mb-2">Trusted By</div>
+      <h2 class="font-display text-2xl md:text-3xl uppercase">Hampton Roads Businesses, Big and Small</h2>
+    </div>
+    <div class="marquee">
+      <div class="marquee-track text-lg font-semibold text-white/80">
+        <span class="px-6">HRT</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">FedEx</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Chartway</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">NEXCOM</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Bakers Crust</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Roto-Rooter</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">WATA</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">ViBe Creative District</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Region Rents</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Conner Plumbing</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Kevcor</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Gourmet Gang</span><span class="px-6 text-white/30">&bull;</span>
+        <!-- duplicate for seamless loop -->
+        <span class="px-6">HRT</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">FedEx</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Chartway</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">NEXCOM</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Bakers Crust</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Roto-Rooter</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">WATA</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">ViBe Creative District</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Region Rents</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Conner Plumbing</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Kevcor</span><span class="px-6 text-white/30">&bull;</span>
+        <span class="px-6">Gourmet Gang</span><span class="px-6 text-white/30">&bull;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="text-blue font-semibold uppercase tracking-widest text-sm mb-3">What Customers Say</div>
+        <h2 class="font-display text-4xl md:text-5xl uppercase text-navy mb-4">Five Stars, In Their Words</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="flex gap-1 mb-3 text-red">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+          </div>
+          <p class="text-ink leading-relaxed mb-4">"Signmasters is the best place! They are more than professional. They are clear in their communication, efficient and quick to get the job done. The finished product is always on point!"</p>
+          <div class="font-bold text-navy">Michelle Y.</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="flex gap-1 mb-3 text-red">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+          </div>
+          <p class="text-ink leading-relaxed mb-4">"Linda and her team are top notch professionals! If you are looking for quality work and service, look no further than Signmasters."</p>
+          <div class="font-bold text-navy">Michael K.</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="flex gap-1 mb-3 text-red">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+          </div>
+          <p class="text-ink leading-relaxed mb-4">"Great place for signs, large format printing and wraps. They are affordable, flexible and do quality work."</p>
+          <div class="font-bold text-navy">Robert N.</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="flex gap-1 mb-3 text-red">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+          </div>
+          <p class="text-ink leading-relaxed mb-4">"They had my graduation yard sign printed and ready for pick up in less than 24 hours!"</p>
+          <div class="font-bold text-navy">Davena S.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get a Quote -->
+  <section id="quote" class="py-20 md:py-28 bg-navy text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image:url('assets/work-1.jpg');background-size:cover;background-position:center;"></div>
+    <div class="max-w-5xl mx-auto px-4 relative">
+      <div class="text-center mb-12">
+        <div class="text-blue-bright font-semibold uppercase tracking-widest text-sm mb-3">Get a Quote</div>
+        <h2 class="font-display text-4xl md:text-5xl uppercase mb-4">Tell Us About Your Project</h2>
+        <p class="text-white/75 text-lg max-w-2xl mx-auto">Send the details and upload your artwork. We will reply with a quote and a timeline, usually within one business day. No account, no phone tag required.</p>
+      </div>
+
+      <div class="bg-white text-ink rounded-2xl shadow-2xl p-6 md:p-10">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">What do you need?</label>
+            <select class="w-full border-2 border-sand rounded-lg px-4 py-3 mb-5 focus:border-blue focus:outline-none">
+              <option>Custom Sign (monument, dimensional, ADA, etc.)</option>
+              <option>Vehicle or Fleet Wrap</option>
+              <option>Banner or Large Format Print</option>
+              <option>Mural or Wall Wrap</option>
+              <option>Window Tint or Film</option>
+              <option>Branding or Design Only</option>
+              <option>Not sure, please advise</option>
+            </select>
+
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Project Type</label>
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <button type="button" class="border-2 border-blue bg-blue/5 text-navy font-semibold py-3 rounded-lg">Business</button>
+              <button type="button" class="border-2 border-sand text-muted font-semibold py-3 rounded-lg hover:border-muted">Personal</button>
+            </div>
+
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Size or Quantity (if known)</label>
+            <input type="text" placeholder="e.g. 4ft x 8ft banner, or 3 vans" class="w-full border-2 border-sand rounded-lg px-4 py-3 mb-5 focus:border-blue focus:outline-none" />
+
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Need it by</label>
+            <input type="text" placeholder="e.g. flexible, or by July 1" class="w-full border-2 border-sand rounded-lg px-4 py-3 focus:border-blue focus:outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Your Details</label>
+            <input type="text" placeholder="Name or business name" class="w-full border-2 border-sand rounded-lg px-4 py-3 mb-3 focus:border-blue focus:outline-none" />
+            <div class="grid grid-cols-2 gap-3 mb-3">
+              <input type="email" placeholder="Email" class="border-2 border-sand rounded-lg px-4 py-3 focus:border-blue focus:outline-none" />
+              <input type="tel" placeholder="Phone" class="border-2 border-sand rounded-lg px-4 py-3 focus:border-blue focus:outline-none" />
+            </div>
+
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Project Details</label>
+            <textarea rows="3" placeholder="Tell us what you have in mind." class="w-full border-2 border-sand rounded-lg px-4 py-3 mb-3 focus:border-blue focus:outline-none"></textarea>
+
+            <div class="border-2 border-dashed border-sand rounded-lg p-4 text-center text-sm text-muted mb-4">
+              <svg class="w-6 h-6 mx-auto mb-2 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/></svg>
+              <span class="font-semibold text-navy">Attach your logo or artwork (optional)</span><br/>
+              PDF, AI, EPS, PNG, or JPG. We vectorize if needed.
+            </div>
+
+            <button type="button" class="w-full bg-red hover-red text-white font-bold py-4 rounded-lg shadow-lg transition text-lg">
+              Send My Quote Request
+            </button>
+            <p class="text-center text-xs text-muted mt-3">We reply by email or phone, usually within one business day.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 text-white/70">
+        Prefer the phone? Call <a href="tel:7574990615" class="font-semibold text-white hover:text-blue-bright">(757) 499-0615</a> &middot; Mon to Fri, 9am to 5pm
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="text-blue font-semibold uppercase tracking-widest text-sm mb-3">Service Area</div>
+      <h2 class="font-display text-3xl md:text-4xl uppercase text-navy mb-6">Serving All of Hampton Roads</h2>
+      <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+        <span class="bg-cream border border-sand px-5 py-2.5 rounded-full font-medium text-navy">Virginia Beach</span>
+        <span class="bg-cream border border-sand px-5 py-2.5 rounded-full font-medium text-navy">Norfolk</span>
+        <span class="bg-cream border border-sand px-5 py-2.5 rounded-full font-medium text-navy">Chesapeake</span>
+        <span class="bg-cream border border-sand px-5 py-2.5 rounded-full font-medium text-navy">Suffolk</span>
+        <span class="bg-cream border border-sand px-5 py-2.5 rounded-full font-medium text-navy">Portsmouth</span>
+        <span class="bg-cream border border-sand px-5 py-2.5 rounded-full font-medium text-navy">Hampton</span>
+        <span class="bg-cream border border-sand px-5 py-2.5 rounded-full font-medium text-navy">Newport News</span>
+      </div>
+      <p class="text-muted text-sm mt-6">Out-of-state installation available for multi-location and franchise rollouts.</p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-strip text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display text-4xl md:text-5xl uppercase mb-4">Let's Build Your Next Sign.</h2>
+      <p class="text-lg text-white/85 mb-8 max-w-2xl mx-auto">Fifty years of Virginia Beach signage, ready for your project. Send the details and we will get you a quote.</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="#quote" class="bg-red hover-red text-white font-bold px-8 py-4 rounded-lg shadow-xl text-lg">Get a Free Quote</a>
+        <a href="tel:7574990615" class="bg-white text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-bright hover:text-navy transition">Call (757) 499-0615</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-navy-deep text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <img src="assets/logo.png" alt="Signmasters" class="h-16 mb-4" />
+          <p class="text-white/70 text-sm leading-relaxed max-w-md">
+            Custom signs, vehicle wraps, banners, murals, and window graphics for Virginia Beach and Hampton Roads since 1975. Design, fabrication, and installation, all in house. SWaM certified.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-sm mb-4 text-blue-bright">Contact</h4>
+          <ul class="space-y-2 text-white/80 text-sm">
+            <li><a href="tel:7574990615" class="hover:text-white">(757) 499-0615</a></li>
+            <li>246 Pennsylvania Ave<br/>Virginia Beach, VA 23462</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-sm mb-4 text-blue-bright">Hours</h4>
+          <ul class="space-y-1 text-white/80 text-sm">
+            <li>Mon to Fri: 9am to 5pm</li>
+            <li>Sat and Sun: Closed</li>
+          </ul>
+          <h4 class="font-bold uppercase tracking-wider text-sm mb-3 mt-6 text-blue-bright">Follow</h4>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/signmastersvb" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-blue flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/signmastersvb" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-blue flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 text-xs text-white/50 flex flex-col md:flex-row justify-between gap-3">
+        <div>&copy; 2026 Signmasters, Inc. All rights reserved.</div>
+        <div>Established 1975 &middot; SWaM Certified &middot; Hampton Roads Chamber of Commerce</div>
+      </div>
+
+      <div class="mt-8 p-4 bg-red/10 border border-red/30 rounded-lg text-xs text-white/80">
+        <strong class="text-white">Unofficial preview / spec mockup.</strong> This page is a redesign concept created by <a href="https://derrellwillis.com" class="underline hover:text-white">Derrell Willis</a> for evaluation purposes only. Not affiliated with or endorsed by Signmasters, Inc. The live site is <a href="https://www.signmastersvb.com" class="underline hover:text-white">signmastersvb.com</a>.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-sticky-cta fixed bottom-0 left-0 right-0 bg-white border-t border-sand p-3 z-50 hidden gap-2 shadow-2xl">
+    <a href="tel:7574990615" class="flex-1 bg-navy text-white font-bold py-3 rounded-lg text-center text-sm">Call Now</a>
+    <a href="#quote" class="flex-1 bg-red text-white font-bold py-3 rounded-lg text-center text-sm">Get a Quote</a>
+  </div>
+
+</body>
+</html>

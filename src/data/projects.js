@@ -1,4 +1,4 @@
-export const projectCategories = ['All', 'Client Sites', 'Web Apps', 'Content']
+export const projectCategories = ['All', 'Client Sites', 'Web Apps', 'Concepts', 'Content']
 
 export const projects = [
   {
@@ -8,6 +8,15 @@ export const projects = [
     tags: ['WordPress', 'Elementor', 'WPForms'],
     image: null, // [UPDATE ME] - add project screenshot
     liveUrl: 'https://whyzerr.com',
+    githubUrl: null,
+  },
+  {
+    title: 'GA Defense Criminal Lawyers',
+    description: 'Website for a criminal defense law firm opening in downtown Macon, GA, steps from the Bibb County Courthouse. Built with WordPress and Kadence, featuring practice area pages, a consultation intake form, and local SEO targeting Bibb County and Middle Georgia.',
+    category: 'Client Sites',
+    tags: ['WordPress', 'Kadence', 'Local SEO'],
+    image: '/img/gacriminallawyers.jpg',
+    liveUrl: 'https://www.gacriminallawyers.com',
     githubUrl: null,
   },
   {
@@ -29,12 +38,30 @@ export const projects = [
     githubUrl: null,
   },
   {
+    title: 'PeakScale Legal',
+    description: 'Single-page marketing funnel for a consulting service that grows bail bondsmen and law firms. Hand-built with vanilla HTML, CSS, and JavaScript, with a multi-step intake form, PHP email backend, and Calendly booking flow.',
+    category: 'Client Sites',
+    tags: ['HTML/CSS/JS', 'PHP', 'Calendly'],
+    image: '/img/peakscale.jpg',
+    liveUrl: 'https://grow.peakscalelegal.com',
+    githubUrl: null,
+  },
+  {
     title: 'TourWax',
     description: 'A live music discovery platform aggregating concert tour dates, venue info, and artist news for 2,200+ artists. Features SEO-optimized landing pages via SSG + ISR, dynamic OG images, structured data, time-based discovery pages, and affiliate revenue integration.',
     category: 'Web Apps',
     tags: ['Next.js', 'TypeScript', 'Postgres', 'Tailwind'],
-    image: null,
+    image: '/img/tourwax.jpg',
     liveUrl: 'https://www.tourwax.com',
+    githubUrl: null,
+  },
+  {
+    title: 'StandUpdates',
+    description: 'A comedy tour dates and news platform tracking 185+ touring comedians and 2,000+ upcoming shows. Features a curated comedy club directory, stand-up specials, automated tour and news pipelines, and SEO-first architecture. Sister site to TourWax.',
+    category: 'Web Apps',
+    tags: ['Next.js', 'TypeScript', 'Postgres', 'Tailwind'],
+    image: '/img/standupdates.jpg',
+    liveUrl: 'https://www.standupdates.com',
     githubUrl: null,
   },
   {
@@ -45,5 +72,59 @@ export const projects = [
     image: null,
     liveUrl: 'https://derrellwillis.com',
     githubUrl: 'https://github.com/InMotion-Derrell/portfolio',
+  },
+  {
+    title: 'Nunez Fine Jewelers',
+    description: 'Concept redesign for a family-owned Virginia Beach jeweler with 20 years at Hilltop. Light editorial design with an emerald jewelry-case gallery showcasing the shop\'s real custom pieces in place of the stock photos on their current site.',
+    category: 'Concepts',
+    tags: ['Concept Redesign', 'Tailwind', 'Local Business'],
+    image: '/img/concepts/nunez.jpg',
+    liveUrl: 'https://www.derrellwillis.com/preview/nunez/',
+    githubUrl: null,
+  },
+  {
+    title: 'Signs, Plaques & More',
+    description: 'Concept redesign for a Virginia Beach trophy and awards shop operating since 1989. Photo-led catalog layout built around their real product and showroom photography, with a graphite, brass, and marble-green awards-house identity.',
+    category: 'Concepts',
+    tags: ['Concept Redesign', 'Tailwind', 'Local Business'],
+    image: '/img/concepts/signs.jpg',
+    liveUrl: 'https://www.derrellwillis.com/preview/signs/',
+    githubUrl: null,
+  },
+  {
+    title: 'Signmasters',
+    description: 'Concept redesign for a Virginia Beach sign and vehicle wrap shop founded in 1975. Built from their real project photos and client roster, restructured to lead with the fleet wrap work that made their name.',
+    category: 'Concepts',
+    tags: ['Concept Redesign', 'Tailwind', 'Local Business'],
+    image: '/img/concepts/signmasters.jpg',
+    liveUrl: 'https://www.derrellwillis.com/preview/signmasters/',
+    githubUrl: null,
+  },
+  {
+    title: 'Dawn Pilates Studio',
+    description: 'Concept redesign for a boutique Reformer Pilates studio with Chesapeake and Virginia Beach locations. A built-in weekly schedule grid replaces the external iframe on their current site, in a sage and terracotta palette.',
+    category: 'Concepts',
+    tags: ['Concept Redesign', 'Tailwind', 'Local Business'],
+    image: '/img/concepts/dawnpilates.jpg',
+    liveUrl: 'https://www.derrellwillis.com/preview/dawnpilates/',
+    githubUrl: null,
+  },
+  {
+    title: "Mike's Tree Service",
+    description: 'Concept redesign for an 18-year Virginia Beach tree service run by two ISA Certified Arborists. Credential-forward layout that puts certifications, licensing, and the family team front and center.',
+    category: 'Concepts',
+    tags: ['Concept Redesign', 'Tailwind', 'Local Business'],
+    image: '/img/concepts/mikestree.jpg',
+    liveUrl: 'https://www.derrellwillis.com/preview/mikestree/',
+    githubUrl: null,
+  },
+  {
+    title: "Libbey's Power Washing",
+    description: 'Concept redesign for a Virginia Beach pressure washing company founded in 2018. Before-and-after focused layout with service breakdowns and trust signals, in a water-and-sky palette built for the trade.',
+    category: 'Concepts',
+    tags: ['Concept Redesign', 'Tailwind', 'Local Business'],
+    image: '/img/concepts/libbeys.jpg',
+    liveUrl: 'https://www.derrellwillis.com/preview/libbeys/',
+    githubUrl: null,
   },
 ]

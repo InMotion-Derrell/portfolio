@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Libbey's Power Washing | Virginia Beach Pressure & Soft Washing</title>
+  <meta name="description" content="Locally owned exterior cleaning in Virginia Beach since 2018. Soft washing, pressure washing, roof cleaning, decks, concrete. Free quotes. (757) 401-1241." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/img-comparison-slider@8/dist/index.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@8/dist/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Anton&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #0c2340;
+      --navy-deep: #07172b;
+      --blue: #1e6fb5;
+      --blue-light: #3b8fd8;
+      --red: #c8102e;
+      --red-dark: #a30d26;
+      --sand: #f5f7fa;
+      --ink: #0f172a;
+      --muted: #64748b;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); }
+    .font-display { font-family: 'Anton', 'Inter', sans-serif; letter-spacing: 0.02em; }
+    .bg-navy { background-color: var(--navy); }
+    .bg-navy-deep { background-color: var(--navy-deep); }
+    .bg-blue-brand { background-color: var(--blue); }
+    .bg-red-brand { background-color: var(--red); }
+    .bg-sand { background-color: var(--sand); }
+    .text-navy { color: var(--navy); }
+    .text-blue-brand { color: var(--blue); }
+    .text-red-brand { color: var(--red); }
+    .text-muted { color: var(--muted); }
+    .border-navy { border-color: var(--navy); }
+    .hover-red:hover { background-color: var(--red-dark); }
+    .hero-gradient {
+      background-image: linear-gradient(135deg, rgba(7,23,43,0.92) 0%, rgba(12,35,64,0.78) 50%, rgba(30,111,181,0.55) 100%), url('assets/hero-2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .cta-strip {
+      background-image: linear-gradient(90deg, rgba(7,23,43,0.95) 0%, rgba(30,111,181,0.85) 100%), url('assets/hero-5.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    img-comparison-slider {
+      --divider-width: 3px;
+      --divider-color: #fff;
+      --default-handle-width: 44px;
+      --default-handle-color: var(--red);
+      --default-handle-opacity: 1;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 20px 50px -20px rgba(0,0,0,0.4);
+    }
+    .label-pill {
+      position: absolute;
+      top: 1rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #fff;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .label-before { left: 1rem; background: rgba(15,23,42,0.85); }
+    .label-after { right: 1rem; background: var(--red); }
+    .service-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 25px 50px -20px rgba(12,35,64,0.25); }
+    .booking-slot { transition: all 0.15s ease; cursor: pointer; }
+    .booking-slot:hover:not(.taken) { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .booking-slot.taken { background: #f1f5f9; color: #94a3b8; cursor: not-allowed; text-decoration: line-through; }
+    .booking-slot.selected { background: var(--red); color: #fff; border-color: var(--red); }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex !important; }
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Top utility bar -->
+  <div class="bg-navy-deep text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-blue-light" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 016 6c0 4-6 10-6 10S4 12 4 8a6 6 0 016-6zm0 4a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          Virginia Beach, VA
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-blue-light" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.5 4v4.25l3.5 2.1-.75 1.23L9 11V6h1.5z"/></svg>
+          Mon–Fri 8:00am–5:00pm
+        </span>
+      </div>
+      <a href="tel:7574011241" class="font-semibold inline-flex items-center gap-1.5 hover:text-blue-light">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3.5A1.5 1.5 0 013.5 2h2.879a1.5 1.5 0 011.06.44l1.122 1.12a1.5 1.5 0 01.351 1.561l-.557 1.671a1.5 1.5 0 00.36 1.518l3.474 3.474a1.5 1.5 0 001.518.36l1.671-.557a1.5 1.5 0 011.561.35l1.122 1.122A1.5 1.5 0 0118 14.121V17a1.5 1.5 0 01-1.5 1.5h-1C7.387 18.5 1.5 12.613 1.5 5.5V4A1.5 1.5 0 012 3.5z"/></svg>
+        (757) 401-1241
+      </a>
+    </div>
+  </div>
+
+  <!-- Main nav -->
+  <header class="sticky top-0 z-40 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Libbey's Power Washing" class="h-14 w-auto" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 font-medium text-navy">
+        <a href="#services" class="hover:text-red-brand">Services</a>
+        <a href="#gallery" class="hover:text-red-brand">Gallery</a>
+        <a href="#why" class="hover:text-red-brand">Why Us</a>
+        <a href="#book" class="hover:text-red-brand">Book Now</a>
+        <a href="#contact" class="hover:text-red-brand">Contact</a>
+      </nav>
+      <a href="#book" class="hidden sm:inline-flex bg-red-brand hover-red text-white font-semibold px-5 py-2.5 rounded-lg shadow-md transition">Free Quote</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero-gradient text-white">
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-32">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 px-3 py-1.5 rounded-full text-sm font-medium mb-6">
+          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          Booking spring &amp; summer 2026, limited slots
+        </div>
+        <h1 class="font-display text-5xl md:text-7xl uppercase leading-[0.95] mb-6">
+          Hampton Roads' Cleanest<br/>
+          <span class="text-blue-light">Exterior, Guaranteed.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
+          Locally owned in Virginia Beach since 2018. Soft washing, pressure washing, roof cleaning, decks, and concrete, done right by people who live where you live.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#book" class="inline-flex items-center gap-2 bg-red-brand hover-red text-white font-semibold px-6 py-3.5 rounded-lg shadow-lg transition text-lg">
+            Get a Free Quote
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="tel:7574011241" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-semibold px-6 py-3.5 rounded-lg transition text-lg">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3.5A1.5 1.5 0 013.5 2h2.879a1.5 1.5 0 011.06.44l1.122 1.12a1.5 1.5 0 01.351 1.561l-.557 1.671a1.5 1.5 0 00.36 1.518l3.474 3.474a1.5 1.5 0 001.518.36l1.671-.557a1.5 1.5 0 011.561.35l1.122 1.122A1.5 1.5 0 0118 14.121V17a1.5 1.5 0 01-1.5 1.5h-1C7.387 18.5 1.5 12.613 1.5 5.5V4A1.5 1.5 0 012 3.5z"/></svg>
+            (757) 401-1241
+          </a>
+        </div>
+
+        <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-light" fill="currentColor" viewBox="0 0 20 20"><path d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            Licensed &amp; Insured
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-light" fill="currentColor" viewBox="0 0 20 20"><path d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            Soft-Wash Safe Methods
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-light" fill="currentColor" viewBox="0 0 20 20"><path d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            BBB Accredited
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-light" fill="currentColor" viewBox="0 0 20 20"><path d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            Owner-Operated Since 2018
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="bg-sand border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="font-display text-4xl text-navy">7+</div>
+        <div class="text-sm text-muted uppercase tracking-wider mt-1">Years Serving VB</div>
+      </div>
+      <div>
+        <div class="font-display text-4xl text-navy">1,200+</div>
+        <div class="text-sm text-muted uppercase tracking-wider mt-1">Homes Cleaned</div>
+      </div>
+      <div>
+        <div class="font-display text-4xl text-navy">100%</div>
+        <div class="text-sm text-muted uppercase tracking-wider mt-1">Satisfaction</div>
+      </div>
+      <div>
+        <div class="font-display text-4xl text-navy">A+</div>
+        <div class="text-sm text-muted uppercase tracking-wider mt-1">BBB Rating</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="text-blue-brand font-semibold uppercase tracking-widest text-sm mb-3">What We Clean</div>
+        <h2 class="font-display text-4xl md:text-5xl uppercase text-navy mb-4">Built for Hampton Roads Weather</h2>
+        <p class="text-muted text-lg">Coastal humidity is rough on siding, roofs, and concrete. Here's how we fight back.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service Card -->
+        <div class="service-card bg-white border border-slate-200 rounded-2xl p-8">
+          <div class="w-14 h-14 rounded-xl bg-blue-brand/10 text-blue-brand flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <h3 class="font-bold text-xl text-navy mb-2">House Soft Washing</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Low-pressure, biodegradable wash that's safe for vinyl, brick, stucco, and painted siding. Kills mildew at the source, not just the surface.</p>
+          <a href="#book" class="text-blue-brand font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Book this service <span>→</span></a>
+        </div>
+
+        <div class="service-card bg-white border border-slate-200 rounded-2xl p-8">
+          <div class="w-14 h-14 rounded-xl bg-blue-brand/10 text-blue-brand flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-bold text-xl text-navy mb-2">Pressure Washing</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">High-pressure cleaning for driveways, walkways, patios, and commercial flatwork. Removes oil, rust, salt, and that gray winter haze.</p>
+          <a href="#book" class="text-blue-brand font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Book this service <span>→</span></a>
+        </div>
+
+        <div class="service-card bg-white border border-slate-200 rounded-2xl p-8">
+          <div class="w-14 h-14 rounded-xl bg-blue-brand/10 text-blue-brand flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-9 9 9-2 2-7-7-7 7-2-2zm2 1v7a1 1 0 001 1h12a1 1 0 001-1v-7"/></svg>
+          </div>
+          <h3 class="font-bold text-xl text-navy mb-2">Roof Stain Removal</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Black streaks on shingles aren't dirt, they're algae. We treat the cause with soft-wash chemistry that's safe for shingles and gutters.</p>
+          <a href="#book" class="text-blue-brand font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Book this service <span>→</span></a>
+        </div>
+
+        <div class="service-card bg-white border border-slate-200 rounded-2xl p-8">
+          <div class="w-14 h-14 rounded-xl bg-blue-brand/10 text-blue-brand flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </div>
+          <h3 class="font-bold text-xl text-navy mb-2">Deck &amp; Fence Cleaning</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Wood, composite, vinyl: different materials, different methods. We use the right pressure and chemistry for each, no gouged grain or stripped finish.</p>
+          <a href="#book" class="text-blue-brand font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Book this service <span>→</span></a>
+        </div>
+
+        <div class="service-card bg-white border border-slate-200 rounded-2xl p-8">
+          <div class="w-14 h-14 rounded-xl bg-blue-brand/10 text-blue-brand flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-bold text-xl text-navy mb-2">Commercial Cleaning</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Storefronts, parking lots, dumpster pads, fleet vehicles. Scheduled service available, so your business stays presentable on autopilot.</p>
+          <a href="#book" class="text-blue-brand font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Book this service <span>→</span></a>
+        </div>
+
+        <div class="service-card bg-navy text-white rounded-2xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-red-brand/20 text-red-brand flex items-center justify-center mb-5">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="font-bold text-xl mb-2">Not Sure What You Need?</h3>
+            <p class="text-white/70 text-sm leading-relaxed mb-6">Send a photo. We'll tell you the right service and a ballpark price within an hour.</p>
+          </div>
+          <a href="#book" class="inline-flex items-center justify-center gap-2 bg-red-brand hover-red text-white font-semibold px-5 py-3 rounded-lg transition">Text Us a Photo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before / After -->
+  <section id="gallery" class="py-20 md:py-28 bg-sand">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="text-blue-brand font-semibold uppercase tracking-widest text-sm mb-3">The Difference</div>
+        <h2 class="font-display text-4xl md:text-5xl uppercase text-navy mb-4">Slide to See for Yourself</h2>
+        <p class="text-muted text-lg">Real work, real Virginia Beach homes. Drag the handle to compare.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="relative">
+          <span class="label-pill label-before">Before</span>
+          <span class="label-pill label-after">After</span>
+          <img-comparison-slider>
+            <img slot="first" src="assets/gallery-2.jpg" alt="House siding before cleaning" />
+            <img slot="second" src="assets/gallery-1.jpg" alt="House siding after cleaning" />
+          </img-comparison-slider>
+          <div class="mt-4">
+            <div class="font-bold text-navy">Vinyl siding soft wash</div>
+            <div class="text-sm text-muted">Great Neck neighborhood &middot; 2-story colonial</div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <span class="label-pill label-before">Before</span>
+          <span class="label-pill label-after">After</span>
+          <img-comparison-slider>
+            <img slot="first" src="assets/gallery-4.jpg" alt="Driveway before cleaning" />
+            <img slot="second" src="assets/gallery-3.jpg" alt="Driveway after cleaning" />
+          </img-comparison-slider>
+          <div class="mt-4">
+            <div class="font-bold text-navy">Concrete driveway &amp; walkway</div>
+            <div class="text-sm text-muted">Kempsville &middot; ~600 sq ft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <img src="assets/hero-1.jpg" alt="" class="aspect-square object-cover rounded-lg hover:opacity-90 transition" />
+        <img src="assets/hero-3.jpg" alt="" class="aspect-square object-cover rounded-lg hover:opacity-90 transition" />
+        <img src="assets/hero-4.jpg" alt="" class="aspect-square object-cover rounded-lg hover:opacity-90 transition" />
+        <img src="assets/hero-6.jpg" alt="" class="aspect-square object-cover rounded-lg hover:opacity-90 transition" />
+        <img src="assets/gallery-5.jpg" alt="" class="aspect-square object-cover rounded-lg hover:opacity-90 transition" />
+        <img src="assets/hero-5.jpg" alt="" class="aspect-square object-cover rounded-lg hover:opacity-90 transition" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section id="why" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="text-blue-brand font-semibold uppercase tracking-widest text-sm mb-3">Why Libbey's</div>
+        <h2 class="font-display text-4xl md:text-5xl uppercase text-navy mb-6">The Owner Shows Up.<br/>Every Time.</h2>
+        <p class="text-muted text-lg leading-relaxed mb-6">
+          Brandon Libbey started this company in 2018 with one truck and a promise: every job gets done the way he'd want it done at his own home. Seven years later, that's still how it works. No subcontractors, no salespeople, no surprises.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-brand/10 text-red-brand flex items-center justify-center">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            </div>
+            <div>
+              <div class="font-bold text-navy">Locally owned, locally rooted</div>
+              <div class="text-sm text-muted">Based in Virginia Beach. We know the salt air, the storm season, and the HOAs.</div>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-brand/10 text-red-brand flex items-center justify-center">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            </div>
+            <div>
+              <div class="font-bold text-navy">Soft-wash certified</div>
+              <div class="text-sm text-muted">The right method for siding, roofs, and painted surfaces. No blown-off shingles, no etched stucco.</div>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-brand/10 text-red-brand flex items-center justify-center">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            </div>
+            <div>
+              <div class="font-bold text-navy">No-pressure quoting</div>
+              <div class="text-sm text-muted">Send a photo, get a ballpark in an hour. Book when you're ready, or don't.</div>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-brand/10 text-red-brand flex items-center justify-center">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"/></svg>
+            </div>
+            <div>
+              <div class="font-bold text-navy">Satisfaction or it's free</div>
+              <div class="text-sm text-muted">If you can find dirt we missed, we come back the next day. No charge, no argument.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="relative">
+        <img src="assets/hero-4.jpg" alt="Libbey's Power Washing in action" class="rounded-2xl shadow-2xl w-full" />
+        <div class="absolute -bottom-6 -left-6 bg-red-brand text-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block">
+          <div class="font-display text-3xl mb-1">Free Quotes</div>
+          <div class="text-sm">Usually back to you within the hour, Mon–Fri.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="book" class="py-20 md:py-28 bg-navy text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image:url('assets/hero-6.jpg');background-size:cover;background-position:center;"></div>
+    <div class="max-w-5xl mx-auto px-4 relative">
+      <div class="text-center mb-12">
+        <div class="text-blue-light font-semibold uppercase tracking-widest text-sm mb-3">Book Online</div>
+        <h2 class="font-display text-4xl md:text-5xl uppercase mb-4">Pick a Time. We'll Confirm in 1 Hour.</h2>
+        <p class="text-white/75 text-lg max-w-2xl mx-auto">No phone tag, no waiting on a callback. Lock in your slot, and we'll text to confirm the same day.</p>
+      </div>
+
+      <div class="bg-white text-ink rounded-2xl shadow-2xl p-6 md:p-10">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Service Needed</label>
+            <select class="w-full border-2 border-slate-200 rounded-lg px-4 py-3 mb-5 focus:border-blue-brand focus:outline-none">
+              <option>House Soft Washing</option>
+              <option>Pressure Washing (Driveway / Concrete)</option>
+              <option>Roof Stain Removal</option>
+              <option>Deck or Fence Cleaning</option>
+              <option>Commercial Cleaning</option>
+              <option>Not sure, recommend something</option>
+            </select>
+
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Property Type</label>
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <button type="button" class="border-2 border-blue-brand bg-blue-brand/5 text-navy font-semibold py-3 rounded-lg">Residential</button>
+              <button type="button" class="border-2 border-slate-200 text-muted font-semibold py-3 rounded-lg hover:border-slate-400">Commercial</button>
+            </div>
+
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Your Address</label>
+            <input type="text" placeholder="123 Main St, Virginia Beach, VA" class="w-full border-2 border-slate-200 rounded-lg px-4 py-3 mb-5 focus:border-blue-brand focus:outline-none" />
+
+            <div class="grid grid-cols-2 gap-3">
+              <input type="text" placeholder="Your name" class="border-2 border-slate-200 rounded-lg px-4 py-3 focus:border-blue-brand focus:outline-none" />
+              <input type="tel" placeholder="Phone" class="border-2 border-slate-200 rounded-lg px-4 py-3 focus:border-blue-brand focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Pick a Date</label>
+            <div class="grid grid-cols-4 gap-2 mb-5">
+              <div class="text-center border-2 border-slate-200 rounded-lg py-3 hover:border-blue-brand cursor-pointer">
+                <div class="text-xs text-muted">MON</div>
+                <div class="font-bold text-lg">2</div>
+                <div class="text-xs text-muted">Jun</div>
+              </div>
+              <div class="text-center border-2 border-blue-brand bg-blue-brand text-white rounded-lg py-3 cursor-pointer">
+                <div class="text-xs opacity-80">TUE</div>
+                <div class="font-bold text-lg">3</div>
+                <div class="text-xs opacity-80">Jun</div>
+              </div>
+              <div class="text-center border-2 border-slate-200 rounded-lg py-3 hover:border-blue-brand cursor-pointer">
+                <div class="text-xs text-muted">WED</div>
+                <div class="font-bold text-lg">4</div>
+                <div class="text-xs text-muted">Jun</div>
+              </div>
+              <div class="text-center border-2 border-slate-200 rounded-lg py-3 hover:border-blue-brand cursor-pointer">
+                <div class="text-xs text-muted">THU</div>
+                <div class="font-bold text-lg">5</div>
+                <div class="text-xs text-muted">Jun</div>
+              </div>
+            </div>
+
+            <label class="block text-sm font-semibold text-navy mb-2 uppercase tracking-wider">Available Times for Tue Jun 3</label>
+            <div class="grid grid-cols-3 gap-2 mb-6">
+              <div class="booking-slot text-center border-2 border-slate-200 rounded-lg py-2.5 font-semibold">8:00 AM</div>
+              <div class="booking-slot taken text-center border-2 border-slate-200 rounded-lg py-2.5 font-semibold">9:30 AM</div>
+              <div class="booking-slot selected text-center border-2 rounded-lg py-2.5 font-semibold">11:00 AM</div>
+              <div class="booking-slot taken text-center border-2 border-slate-200 rounded-lg py-2.5 font-semibold">12:30 PM</div>
+              <div class="booking-slot text-center border-2 border-slate-200 rounded-lg py-2.5 font-semibold">2:00 PM</div>
+              <div class="booking-slot text-center border-2 border-slate-200 rounded-lg py-2.5 font-semibold">3:30 PM</div>
+            </div>
+
+            <button type="button" class="w-full bg-red-brand hover-red text-white font-bold py-4 rounded-lg shadow-lg transition text-lg">
+              Reserve Tue Jun 3 at 11:00 AM
+            </button>
+            <p class="text-center text-xs text-muted mt-3">No charge until the job is done. We'll text to confirm within 1 hour.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 text-white/70">
+        Prefer the phone? Call <a href="tel:7574011241" class="font-semibold text-white hover:text-blue-light">(757) 401-1241</a> &middot; Mon–Fri 8am–5pm
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="py-16 bg-sand">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="text-blue-brand font-semibold uppercase tracking-widest text-sm mb-3">Service Area</div>
+      <h2 class="font-display text-3xl md:text-4xl uppercase text-navy mb-6">Proudly Serving Hampton Roads</h2>
+      <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+        <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full font-medium text-navy">Virginia Beach</span>
+        <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full font-medium text-navy">Chesapeake</span>
+        <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full font-medium text-navy">Norfolk</span>
+        <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full font-medium text-navy">Suffolk</span>
+        <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full font-medium text-navy">Portsmouth</span>
+        <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full font-medium text-navy">Hampton</span>
+        <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full font-medium text-navy">Newport News</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-strip text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display text-4xl md:text-5xl uppercase mb-4">Ready for a Cleaner Exterior?</h2>
+      <p class="text-lg text-white/85 mb-8 max-w-2xl mx-auto">Free quotes in under an hour. No hard sell, no callback chase.</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="#book" class="bg-red-brand hover-red text-white font-bold px-8 py-4 rounded-lg shadow-xl text-lg">Get My Free Quote</a>
+        <a href="tel:7574011241" class="bg-white text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-light hover:text-white transition">Call (757) 401-1241</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-navy-deep text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <img src="assets/logo.png" alt="Libbey's Power Washing" class="h-16 mb-4 bg-white/95 p-2 rounded-lg inline-block" />
+          <p class="text-white/70 text-sm leading-relaxed max-w-md">
+            Locally owned exterior cleaning serving Virginia Beach and the greater Hampton Roads area since 2018. Soft washing, pressure washing, roof cleaning, decks, concrete, and commercial.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-sm mb-4 text-blue-light">Contact</h4>
+          <ul class="space-y-2 text-white/80 text-sm">
+            <li><a href="tel:7574011241" class="hover:text-white">(757) 401-1241</a></li>
+            <li><a href="mailto:office@libbeyspowerwashing.com" class="hover:text-white break-all">office@libbeyspowerwashing.com</a></li>
+            <li>2597 Quality Court, Ste 106<br/>Virginia Beach, VA 23454</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-sm mb-4 text-blue-light">Hours</h4>
+          <ul class="space-y-1 text-white/80 text-sm">
+            <li>Mon–Fri: 8:00 AM – 5:00 PM</li>
+            <li>Sat–Sun: Closed</li>
+          </ul>
+          <h4 class="font-bold uppercase tracking-wider text-sm mb-3 mt-6 text-blue-light">Follow</h4>
+          <div class="flex gap-3">
+            <a href="#" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-blue-brand flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 text-xs text-white/50 flex flex-col md:flex-row justify-between gap-3">
+        <div>&copy; 2026 Libbey's Power Washing. All rights reserved.</div>
+        <div>Licensed &amp; Insured &middot; BBB Accredited</div>
+      </div>
+
+      <!-- Disclaimer for spec mockup -->
+      <div class="mt-8 p-4 bg-red-brand/10 border border-red-brand/30 rounded-lg text-xs text-white/80">
+        <strong class="text-white">Unofficial preview / spec mockup.</strong> This page is a redesign concept created by <a href="https://derrellwillis.com" class="underline hover:text-white">Derrell Willis</a> for evaluation purposes only. Not affiliated with or endorsed by Libbey's Power Washing. The live site is <a href="https://libbeyspowerwashing.com" class="underline hover:text-white">libbeyspowerwashing.com</a>.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-sticky-cta fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 z-50 hidden gap-2 shadow-2xl">
+    <a href="tel:7574011241" class="flex-1 bg-navy text-white font-bold py-3 rounded-lg text-center text-sm">Call Now</a>
+    <a href="#book" class="flex-1 bg-red-brand text-white font-bold py-3 rounded-lg text-center text-sm">Free Quote</a>
+  </div>
+
+</body>
+</html>
